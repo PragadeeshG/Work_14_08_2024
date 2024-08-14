@@ -1,0 +1,16 @@
+create table if not exists a_to_z_pipeline_security(
+id Integer not null,
+variable_group_owner varchar(255) null,
+system_code varchar(255) null,
+app_name varchar(255) null,
+variable_name Integer null,
+secret_variable char null,
+org_update_available char null,
+admin_password varchar(255) null,
+dev_mode varchar(255) null,
+recent_run varchar(255) null,
+maker_checker_mode varchar(255) null,
+task_group varchar(255) null,
+deploy_groups varchar(255) null,
+entity_state varchar(255) null,
+constraint a_to_z_pipeline_security_pk primary key(id));

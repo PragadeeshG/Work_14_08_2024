@@ -1,0 +1,16 @@
+create table if not exists a_to_z_pipeline_components(
+run_by Integer not null,
+time_started varchar(255) null,
+time_elapsed varchar(255) null,
+linked_artifacts varchar(255) null,
+stages varchar(255) null,
+code_coverage_applicable char null,
+artifacts_upload char null,
+scan_applicable char null,
+artifact_link varchar(255) null,
+scan_result_link varchar(255) null,
+release_checks Integer null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint a_to_z_pipeline_components_pk primary key(run_by));
